@@ -41,5 +41,17 @@ Retornamos o valor mediano do array ordenado encontrando o índice do meio, já 
 
 ## Questão 02 
 
+### problem: Given an array with distinct elements, the task is to find the number of pairs in the array such that a - b = x, where x is a given integer.
+
+**solution code:** [questao02.js](https://github.com/ludeoliveira/desafioCapgemini02/blob/main/questao02.js)
+
+**solution description:** First I used two nested loops to check all possible pairs *(i,j)* in the array. Second, I tested if each pair match the given condition ( if the difference between *i* and *j* is equal to the given integer *(num)*). `Math.abs()` returns the absolute value of this difference. If the condition is true, 1 is added to the variable `pairNumber`, if it is false, nothing happens with the variable. When the loop ends, the updated `pairNumber` value is returned.
+
+### problema: Dado um array com elementos distintos, a tarefa é encontrar o número de pares no array tal que a - b = x, onde x é um dado inteiro.
+
+**Codigo da solução:** [questao02.js](https://github.com/ludeoliveira/desafioCapgemini02/blob/main/questao02.js)
+
+**descrição:** Primeiro, usei dois loops aninhados para verificar todos os pares possíveis *(i,j)* no array. Em segundo lugar, testei se cada par corresponde à condição fornecida (se a diferença entre *i* e *j* for igual ao inteiro fornecido *(num)*). `Math.abs()` retorna o valor absoluto desta diferença. Se a condição for verdadeira, 1 é adicionado à variável `pairNumber`, se for falso, nada acontece com a variável. Quando o loop termina, o valor de `pairNumber` atualizado é retornado.
+
 ## Questão 03 
 
