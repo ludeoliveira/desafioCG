@@ -1,6 +1,6 @@
 # Desafio de programação CAPGEMINI 02
 
-A linguagem escolhida para resolução do desafio foi JavaScript. Cada questão tem um arquivo `.js` e um `.html` correspondente. Para rodar o cógigo, abra o arquivo * *html* * em seu navegador de preferência, clique com o botão direito em qualquer local da página, escolha * *inspecionar* * e acesse o console no painel recém aberto. Ao recarregar a página o resultado do teste aparecerá no console.
+A linguagem escolhida para resolução do desafio foi JavaScript. Cada questão tem um arquivo `.js` e um `.html` correspondente. Para rodar o cógigo, abra o arquivo *html*  em seu navegador de preferência, clique com o botão direito em qualquer local da página, escolha *inspecionar* e acesse o console no painel recém aberto. Ao recarregar a página o resultado do teste aparecerá no console.
 
 ## Questão 01
 
@@ -11,7 +11,7 @@ A linguagem escolhida para resolução do desafio foi JavaScript. Cada questão 
 
 **1.** sort the array: 
 
-`const sortedArr = arr.sort((a,b) => a-b)'`
+`const sortedArr = arr.sort((a,b) => a-b)`
 
 I used the method `.sort()` with the given function to sort the values of the array in ascending order.
 
@@ -19,7 +19,7 @@ I used the method `.sort()` with the given function to sort the values of the ar
 
 `return sortedArr[Math.floor(sortedArr.length/2)]`
 
-Return the median value of the sorted array by finding the middle index since the array has an uneven number of elements. we find this index dividing the length of the array by two and then rounding the obtained number with the `Math.floor()` method.
+Return the median value of the sorted array by finding the middle index since the array has an uneven number of elements. we find this index by dividing the length of the array by two and then rounding the obtained number with the `Math.floor()` method.
 
 ### problema: calcular a mediana de um array não ordenado
 
