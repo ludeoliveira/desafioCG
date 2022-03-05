@@ -1,24 +1,32 @@
-// let str = 'The revolution'
-// let str2 = str.split(' ').join('') // remove the space between characters
-// let gridSize = Math.ceil(Math.sqrt(str2.length)) // define the grid size according to the number of characters in the string
-// console.log(gridSize)
+// # Questão 03
 
-    const str = 'The revolution'
-    const str2 = str.split(' ').join('')
+// Write an algorithm that, when receiving a string s, displays the message encrypted according to the rules described.
+
+    function getEncriptedMessage(str) {
+
+        const str2 = str.split(' ').join('')
+        const gridSize = Math.ceil(Math.sqrt(str2.length))
+        let newArr = []
+        let newMessage = ''
+        let a = 0
+        let b = gridSize 
+
+        for (let i = 0; i < gridSize; i++) {
+            newArr.push(str2.slice(a,b))
+            a += gridSize
+            b += gridSize
+        }
     
-    const gridSize = Math.ceil(Math.sqrt(str2.length))
-    const myArray1 = str2.match(/.{1,4}/g) // [ 'Ther', 'evol', 'utio', 'n' ]
-    let arrNew = []
-    let subArray = []
-    console.log(myArray1)
+        for (let i = 0; i < gridSize; i++) { 
+            for (let j = 0; j < gridSize; j++) {
+                if (newArr[j][i]) {
+                    newMessage += newArr[j][i]
+                }
+            } newMessage += ' '                       
+        }  console.log(newMessage)    
+    }
 
-    // for (let i = 0; i < myArray1.length; i++) {
-    //     subArray += myArray1[i]
-    //     // console.log(subArray)
-    //     for (let j = 0; i < myArray1[i].length; j++) {      
-    //         arrNew = subArray[j]
-    //     }
-    // // } console.log(arrNew)
-        
-    // }
 
+ // test
+    let strTest = 'ola mundo'
+    console.log(getEncriptedMessage(strTest))

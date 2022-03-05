@@ -55,3 +55,10 @@ Retornamos o valor mediano do array ordenado encontrando o índice do meio, já 
 
 ## Questão 03 
 
+### problem: Write an algorithm that, when receiving a string s, displays the message encrypted according to the rules described.
+
+`const str2 = str.split(' ').join('')` remove the space between characters
+
+`const gridSize = Math.ceil(Math.sqrt(str2.length))` define the grid size according to the number of characters in the string
+
+The first loop inside the function creates a **two dimensional array** (as in an *array of arrays*) from the string parsed to the function argument. The subsequent nested for loop iterates trough the elements with the same index of the `newArray`.
